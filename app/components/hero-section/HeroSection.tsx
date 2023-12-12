@@ -6,7 +6,7 @@ import jillHeroImage from "../../../public/png/jill-hero.png";
 const HeroSection = () => {
 	return (
 		<Section bgColor="my-light-blue">
-			<div className="grid grid-cols-2 grid-rows-1 bg-my-light-blue h-[640px] overflow-hidden">
+			<div className="grid grid-cols-2 grid-rows-1 bg-my-light-blue h-[640px]">
 				{/* Text content */}
 				<div className="flex flex-col gap-6 grid-c col-start-1 col-end-2 justify-center">
 					<h1 className="text-my-dark-blue leading-none">
@@ -17,12 +17,12 @@ const HeroSection = () => {
 						Treasured Moments Become Timeless Masterpieces You&apos;ll
 						Cherish Forever.
 					</p>
-					<Button className="btn bg-my-medium-orange max-w-fit text-my-dark-blue">
+					<Button className="btn bg-my-medium-orange max-w-fit text-my-dark-blue hover:bg-my-dark-blue hover:text-my-medium-orange ">
 						Contact Me
 					</Button>
 				</div>
 				{/* Hero image */}
-				<div className="col-start-2 col-end-3">
+				<div className="col-start-2 col-end-3 overflow-hidden">
 					<div className="relative rounded-full overflow-clip w-[1024px] h-[1024px] -top-8">
 						<Image
 							src={jillHeroImage}
