@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "../styles/global.css";
 
 const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
+
+const fontDisplay = Playfair_Display({
+	weight: ["400", "600", "800"],
+	subsets: ["latin"],
+	display: "swap",
+	variable: "--font-display",
+});
 
 export const metadata: Metadata = {
 	title: "Create Next App",
