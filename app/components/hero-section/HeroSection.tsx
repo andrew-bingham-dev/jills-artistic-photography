@@ -6,6 +6,10 @@ import jillHeroImage from "../../../public/png/jill-hero.png";
 const HeroSection = () => {
 	return (
 		<Section bgColor="my-light-blue">
+			{/* Background circles */}
+			<div className="absolute bg-black/5 w-[1500px] h-[1500px] rounded-full -top-[200px] -right-[500px] z-[1]" />
+			<div className="absolute bg-black/5 w-[800px] h-[800px] rounded-full -top-[200px] -left-[300px]  z-[1]" />
+			<div className="absolute bg-black/5 w-[640px] h-[640px] rounded-full -bottom-[200px] -left-[300px]  z-[1]" />
 			<div className="grid grid-cols-2 grid-rows-1 bg-my-light-blue h-[640px]">
 				{/* Text content */}
 				<div className="flex flex-col gap-6 grid-c col-start-1 col-end-2 justify-center">
@@ -22,7 +26,7 @@ const HeroSection = () => {
 					</Button>
 				</div>
 				{/* Hero image */}
-				<div className="col-start-2 col-end-3 overflow-hidden">
+				<div className="col-start-2 col-end-3">
 					<div className="relative rounded-full overflow-clip w-[1024px] h-[1024px] -top-8">
 						<Image
 							src={jillHeroImage}
