@@ -2,13 +2,14 @@
 
 import Image from "next/image";
 import Section from "../section/Section";
-import { Button } from "@/components/ui/button";
+
 import NavLink from "./NavLink";
+import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
 	return (
-		<Section bgColor="my-light-blue">
-			<nav className="bg-transparent flex items-center justify-between py-6 sticky">
+		<Section bgColor="my-light-blue" classes="sticky z-nav top-0">
+			<nav className="bg-transparent flex items-center justify-between py-6 ">
 				<Image src="/svg/logo.svg" alt="Logo" width={136} height={37} />
 				<ul className="flex">
 					<li>
