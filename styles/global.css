@@ -87,5 +87,4 @@
   .btn {
     @apply px-4 py-2 rounded-full w-auto text-[16px] font-semibold transition-colors duration-500 ease-in-out active:ring-4 active:ring-my-medium-orange active:ring-offset-transparent;
   }
-
 }
