@@ -13,7 +13,7 @@ export default function Navbar() {
 					<li>About Me</li>
 					<li>Blog</li>
 				</ul>
-				<Button className="btn bg-my-dark-blue text-my-light-beige">
+				<Button className="btn bg-my-dark-blue text-my-light-beige hover:bg-my-light-beige hover:text-my-dark-blue">
 					Contact Me
 				</Button>
 			</nav>
