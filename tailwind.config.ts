@@ -81,8 +81,20 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
         display: ['var(--font-display)'],
-      }
+      },
+      zIndex: {
+        'decor-1': '1',
+        'decor-2': '2',
+        'decor-3': '3',
+        'decor-4': '4',
+        'decor-5': '5',
+        'decor-6': '6',
+        'decor-7': '7',
+        'decor-8': '8',
+        'button': '10',
+        'nav': '20'
+      },
     },
-  },
-  plugins: [require("tailwindcss-animate")],
+    plugins: [require("tailwindcss-animate")],
+  }
 }

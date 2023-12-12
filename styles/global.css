@@ -83,8 +83,51 @@
   }
 }
 
+
+/* TODO: If my viewport utilities are not used, then delete them */
+
 @layer utilities {
   .btn {
     @apply px-4 py-2 rounded-full w-auto text-[16px] font-semibold transition-colors duration-500 ease-in-out active:ring-4 active:ring-my-medium-orange active:ring-offset-transparent;
+  }
+
+  .padding-x-4vw {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  .padding-x-8vw {
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+
+  .padding-y-4vh {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+  }
+
+  .padding-y-8vh {
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+  }
+
+  .m-x-4vw {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+
+  .m-x-8vw {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+
+  .m-y-4vh {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+
+  .m-y-8vh {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
   }
 }
