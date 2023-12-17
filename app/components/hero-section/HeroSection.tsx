@@ -1,18 +1,22 @@
 import { Button } from "@/components/ui/button";
 import Section from "../section/Section";
 import Image from "next/image";
-import jillHeroImage from "../../../public/png/jill-hero.png";
+import jillHeroImage from "../../../public/jpg/profile/profile_01.jpg";
 
 const HeroSection = () => {
 	return (
-		<Section bgColor="my-light-blue">
+		<Section
+			name="HeroSection"
+			bgColor="my-light-blue"
+			sectionClasses="overflow-y-clip"
+		>
 			{/* Background circles */}
-			<div className="absolute bg-black/5 w-[1500px] h-[1500px] rounded-full -top-[200px] -right-[500px] z-[1]" />
-			<div className="absolute bg-black/5 w-[800px] h-[800px] rounded-full -top-[200px] -left-[300px]  z-[1]" />
-			<div className="absolute bg-black/5 w-[640px] h-[640px] rounded-full -bottom-[200px] -left-[300px]  z-[1]" />
+			<div className="absolute bg-black/5 w-[1500px] h-[1500px] rounded-full -top-[200px] -right-[500px] z-decor-1" />
+			<div className="absolute bg-black/5 w-[800px] h-[800px] rounded-full -top-[200px] -left-[300px]  z-decor-2" />
+			<div className="absolute bg-black/5 w-[640px] h-[640px] rounded-full -bottom-[200px] -left-[300px]  z-decor-3" />
 			<div className="grid grid-cols-2 grid-rows-1 bg-my-light-blue h-[640px]">
-				{/* Text content */}
-				<div className="flex flex-col gap-6 grid-c col-start-1 col-end-2 justify-center">
+				{/* Hero content */}
+				<div className="flex flex-col gap-6 grid-c col-start-1 col-end-2 justify-center z-10">
 					<h1 className="text-my-dark-blue leading-none">
 						Capturing Moments That Last a Lifetime
 					</h1>
@@ -21,18 +25,18 @@ const HeroSection = () => {
 						Treasured Moments Become Timeless Masterpieces You&apos;ll
 						Cherish Forever.
 					</p>
-					<Button className="btn bg-my-medium-orange max-w-fit text-my-dark-blue hover:bg-my-dark-blue hover:text-my-medium-orange ">
+					<Button className="btn bg-my-medium-orange max-w-fit text-my-dark-blue hover:bg-my-dark-blue hover:text-my-medium-orange shadow-xl">
 						Contact Me
 					</Button>
 				</div>
 				{/* Hero image */}
-				<div className="col-start-2 col-end-3">
-					<div className="relative rounded-full overflow-clip w-[1024px] h-[1024px] -top-8">
+				{/* TODO: Get a better quality image */}
+				<div className="col-start-2 col-end-3 z-[2]">
+					<div className="relative rounded-full overflow-clip w-[1024px] min-h-[1024px] -top-8">
 						<Image
 							src={jillHeroImage}
 							alt="Hero Image"
-							width={1024}
-							height={1024}
+							fill
 							style={{ objectFit: "cover" }}
 						/>
 					</div>
