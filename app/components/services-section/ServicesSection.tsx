@@ -1,7 +1,7 @@
 import Spacer from "../Spacer";
 import BrowHeadingParagraph from "../brow-heading-paragraph/BrowHeadingParagraph";
 import Section from "../section/Section";
-import ServicesCardContainer from "../services-cards/ServicesCardContainer";
+import ServicesCardContainer from "./ServicesCardContainer";
 import PhotoSpread from "./PhotoSpread";
 
 const ServicesSection = () => {
