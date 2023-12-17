@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Section from "../section/Section";
 import Image from "next/image";
 import jillHeroImage from "../../../public/jpg/profile/profile_01.jpg";
+import CtaButton from "../cta-button/CtaButton";
 
 const HeroSection = () => {
 	return (
@@ -25,9 +26,7 @@ const HeroSection = () => {
 						Treasured Moments Become Timeless Masterpieces You&apos;ll
 						Cherish Forever.
 					</p>
-					<Button className="btn bg-my-medium-orange max-w-fit text-my-dark-blue hover:bg-my-dark-blue hover:text-my-medium-orange shadow-xl">
-						Contact Me
-					</Button>
+					<CtaButton />
 				</div>
 				{/* Hero image */}
 				{/* TODO: Get a better quality image */}
