@@ -8,7 +8,11 @@ import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
 	return (
-		<Section bgColor="my-light-blue" classes="sticky z-nav top-0">
+		<Section
+			name="NavbarSection"
+			bgColor="my-light-blue"
+			sectionClasses="sticky z-nav top-0"
+		>
 			<nav className="bg-transparent flex items-center justify-between py-6 ">
 				<Image src="/svg/logo.svg" alt="Logo" width={136} height={37} />
 				<ul className="flex">
@@ -25,7 +29,7 @@ export default function Navbar() {
 						<NavLink label="Blog" path="/blog" />
 					</li>
 				</ul>
-				<Button className="btn bg-my-dark-blue text-my-light-beige hover:bg-my-light-beige hover:text-my-dark-blue">
+				<Button className="btn bg-my-dark-blue text-my-light-beige hover:bg-my-light-beige hover:text-my-dark-blue shadow-xl">
 					Contact Me
 				</Button>
 			</nav>
