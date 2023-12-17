@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  safelist: ['bg-my-light-blue', 'bg-my-medium-blue', 'bg-my-dark-blue'],
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -82,7 +83,8 @@ module.exports = {
       },
       zIndex: {
         'section': '0',
-        'decor': '2',
+        'decor': '1',
+        'text': '3',
         'image': '5',
         'button': '10',
         'nav': '20'
