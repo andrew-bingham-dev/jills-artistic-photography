@@ -18,7 +18,7 @@ const Section: React.FC<SectionWrapperProps> = ({
 	return (
 		<section
 			id={name}
-			className={`overflow-x-clip bg-${bgColor} ${sectionClasses}`}
+			className={`z-section overflow-x-clip bg-${bgColor} ${sectionClasses}`}
 		>
 			<div className={`max-w-7xl mx-auto relative ${containerClasses}`}>
 				{children}
