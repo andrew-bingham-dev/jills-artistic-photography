@@ -1,25 +1,27 @@
+import Spacer from "../Spacer";
 import BrowHeadingParagraph from "../brow-heading-paragraph/BrowHeadingParagraph";
 import Section from "../section/Section";
-import ServicesCard from "../services-cards/ServicesCard";
 import ServicesCardContainer from "../services-cards/ServicesCardContainer";
+import PhotoSpread from "./PhotoSpread";
 
 const ServicesSection = () => {
 	return (
 		<Section
 			name="ServicesSection"
 			bgColor="my-medium-blue"
-			sectionClasses="overflow-hidden"
-			containerClasses="z-[20]"
+			sectionClasses="overflow-x-clip"
 		>
-			<div className="h-[800px] bg-my-medium-blue py-16">
-				<BrowHeadingParagraph
-					color="my-light-beige"
-					brow="Capture"
-					heading="Preserve Your Precious Moments"
-					paragraph="Professional photography services for weddings, portraits, and more."
-				/>
-				<ServicesCardContainer />
-			</div>
+			<Spacer size="x-large" />
+			<BrowHeadingParagraph
+				color="my-light-beige"
+				brow="Capture"
+				heading="Preserve Your Precious Moments"
+				paragraph="Professional photography services for weddings, portraits, and more."
+			/>
+			<Spacer size="large" />
+			<ServicesCardContainer />
+			<Spacer size="x-large" />
+			<PhotoSpread />
 		</Section>
 	);
 };
