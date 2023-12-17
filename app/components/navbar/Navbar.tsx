@@ -1,20 +1,14 @@
 "use client";
 
-import Image from "next/image";
-import Section from "../section/Section";
-
 import NavLink from "./NavLink";
 import { Button } from "@/components/ui/button";
+import Logo from "../logo/Logo";
 
 export default function Navbar() {
 	return (
-		<Section
-			name="NavbarSection"
-			bgColor="my-light-blue"
-			sectionClasses="sticky z-nav top-0"
-		>
-			<nav className="bg-transparent flex items-center justify-between py-6 ">
-				<Image src="/svg/logo.svg" alt="Logo" width={136} height={37} />
+		<div id="NavbarSection" className="bg-my-light-blue sticky z-nav top-0">
+			<nav className="bg-transparent flex items-center justify-between py-6 max-w-7xl mx-auto">
+				<Logo type="dark" />
 				<ul className="flex">
 					<li>
 						<NavLink label="Home" path="/" />
@@ -33,6 +27,6 @@ export default function Navbar() {
 					Contact Me
 				</Button>
 			</nav>
-		</Section>
+		</div>
 	);
 }
