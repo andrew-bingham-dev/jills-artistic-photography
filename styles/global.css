@@ -68,7 +68,26 @@
   h1 {
     font-size: 4rem;
     font-weight: 800;
-    font-family: serif;
+    @apply font-serif;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    @apply font-serif;
+  }
+
+  h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    @apply font-serif;
+  }
+
+  p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    @apply font-sans;
   }
 
 
@@ -88,7 +107,7 @@
 
 @layer utilities {
   .btn {
-    @apply px-4 py-2 rounded-full w-auto text-[16px] font-semibold transition-colors duration-500 ease-in-out active:ring-4 active:ring-my-medium-orange active:ring-offset-transparent;
+    @apply shadow-xl active:shadow-none z-button px-4 py-2 rounded-full w-auto text-[16px] font-semibold transition-all duration-300 ease-in-out active:ring-4 active:ring-my-medium-orange active:ring-offset-transparent;
   }
 
   .padding-x-4vw {

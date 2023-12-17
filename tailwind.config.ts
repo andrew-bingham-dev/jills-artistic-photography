@@ -1,6 +1,3 @@
-import { fontFamily } from 'tailwindcss/defaultTheme'
-
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -24,7 +21,7 @@ module.exports = {
         'my-medium-blue': '#546677',
         'my-dark-blue': '#191F24',
         'my-medium-orange': '#FE7F2D',
-        'my-light-beige': '#F3EEE8',
+        'my-light-beige': '#E4D5C2',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -63,6 +60,7 @@ module.exports = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        '4xl': '32px',
       },
       keyframes: {
         "accordion-down": {
@@ -79,8 +77,8 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        sans: ['var(--font-sans)', ...fontFamily.sans],
-        display: ['var(--font-display)'],
+        sans: ['var(--font-sans)'],
+        serif: ['var(--font-serif)'],
       },
       zIndex: {
         'decor-1': '1',

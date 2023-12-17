@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Montserrat, Playfair_Display } from "next/font/google";
 import "../styles/global.css";
 
-const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
-
-const fontDisplay = Playfair_Display({
-	weight: ["400", "600", "800"],
+const fontSans = Montserrat({
 	subsets: ["latin"],
-	display: "swap",
-	variable: "--font-display",
+	display: "block",
+	variable: "--font-sans",
+});
+
+const fontSerif = Playfair_Display({
+	subsets: ["latin"],
+	display: "block",
+	variable: "--font-serif",
 });
 
 export const metadata: Metadata = {
@@ -22,8 +25,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
-			<body className={fontSans.className}>{children}</body>
+		<html lang="en" className={`${fontSans.variable} ${fontSerif.variable}`}>
+			<body>{children}</body>
 		</html>
 	);
 }
