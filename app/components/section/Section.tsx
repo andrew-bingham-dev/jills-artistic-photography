@@ -1,19 +1,28 @@
 import React from "react";
 
 interface SectionWrapperProps {
+	name: string;
 	children: React.ReactNode;
 	bgColor: string;
-	classes?: string;
+	sectionClasses?: string;
+	containerClasses?: string;
 }
 
 const Section: React.FC<SectionWrapperProps> = ({
+	name,
 	children,
 	bgColor,
-	classes,
+	sectionClasses = "",
+	containerClasses = "",
 }) => {
 	return (
-		<section className={`w-full bg-${bgColor} ${classes}`}>
-			<div className="max-w-7xl mx-auto relative">{children}</div>
+		<section
+			id={name}
+			className={`overflow-x-clip bg-${bgColor} ${sectionClasses}`}
+		>
+			<div className={`max-w-7xl mx-auto relative ${containerClasses}`}>
+				{children}
+			</div>
 		</section>
 	);
 };
