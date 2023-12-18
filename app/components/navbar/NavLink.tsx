@@ -14,7 +14,7 @@ const NavLink: React.FC<NavLinkProps> = ({ label, path }) => {
 			href={path}
 			className={`${
 				currentPath === path ? "font-semibold" : ""
-			} hover:bg-black/5 py-8 px-8 transition-colors duration-500`}
+			} hover:bg-black/5 py-8 md:px-4 lg:px-8 transition-colors duration-500`}
 		>
 			{label}
 		</Link>

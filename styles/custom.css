@@ -1,0 +1,5 @@
+.burger .burger-lines,
+.burger .burger-lines::before,
+.burger .burger-lines::after {
+  background-color: #191F24;
+}
