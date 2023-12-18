@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button";
 import Section from "../section/Section";
 import Image from "next/image";
-import jillHeroImage from "../../../public/jpg/profile/profile_01.jpg";
 import CtaButton from "../cta-button/CtaButton";
 
 const HeroSection = () => {
@@ -33,7 +31,7 @@ const HeroSection = () => {
 				<div className="col-start-2 col-end-3 z-[2]">
 					<div className="relative rounded-full overflow-clip w-[1024px] min-h-[1024px] -top-8">
 						<Image
-							src={jillHeroImage}
+							src={"/jpg/profile/profile_01.jpg"}
 							alt="Hero Image"
 							fill
 							style={{ objectFit: "cover" }}
