@@ -82,8 +82,9 @@ module.exports = {
         serif: ['var(--font-serif)'],
       },
       zIndex: {
-        'section': '0',
-        'decor': '1',
+        'section': '-5',
+        'container': '0',
+        'decor': '-3',
         'text': '3',
         'image': '5',
         'button': '10',
