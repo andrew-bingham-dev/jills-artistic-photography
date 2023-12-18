@@ -7,12 +7,9 @@ const PhotoSpread = () => {
 		// TODO: Fix the gradient circle so that it's centered on the image
 		<div className="relative aspect-[5/3.5]">
 			{/* gradient circle */}
-			<div
-				id="gradient"
-				className="absolute left-[30%] top-[40%] z-decor flex justify-center items-center w-auto h-auto opacity-50"
-			>
-				<RadialGradient />
-			</div>
+
+			<RadialGradient left="1" top="40" />
+			<RadialGradient left="90" top="170" />
 			{/* w:416px h:234px - w:29% */}
 			<div className="absolute w-[29%] top-[2%] left-[4%] -rotate-12 overflow-clip aspect-[3/2] shadow-md z-image">
 				<Image
