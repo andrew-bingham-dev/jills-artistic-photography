@@ -6,11 +6,7 @@ import PhotoSpread from "./PhotoSpread";
 
 const ServicesSection = () => {
 	return (
-		<Section
-			name="ServicesSection"
-			bgColor="my-medium-blue"
-			sectionClasses="overflow-x-clip"
-		>
+		<Section name="ServicesSection" bgColor="my-medium-blue">
 			<Spacer size="x-large" />
 			<BrowHeadingParagraph
 				color="my-light-beige"
