@@ -27,7 +27,7 @@ const HeroSection = () => {
 					<CtaButton />
 				</div>
 				{/* Hero image */}
-				{/* TODO: Get a better quality image */}
+
 				<div className="col-start-2 col-end-3 z-[2]">
 					<div className="relative rounded-full overflow-clip w-[1024px] min-h-[1024px] -top-8">
 						<Image
