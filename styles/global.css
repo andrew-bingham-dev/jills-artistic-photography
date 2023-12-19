@@ -66,10 +66,9 @@
   }
 
   h1 {
-    font-size: 4rem;
     font-weight: 800;
     line-height: 100%;
-    @apply font-serif;
+    @apply font-serif block relative 2xl:text-[64px] md:text-[56px] text-[40px];
   }
 
   h2 {
@@ -108,11 +107,22 @@
 /* TODO: If my viewport utilities are not used, then delete them */
 
 @layer utilities {
-  .btn {
-    @apply shadow-xl active:shadow-none z-button px-4 py-2 rounded-full w-auto text-[16px] font-semibold transition-all duration-300 ease-in-out active:ring-4 active:ring-my-medium-orange active:ring-offset-transparent;
-  }
-
   .responsive-content-padding {
     @apply px-4 md:px-8 xl:px-16 2xl:px-0;
   }
+
+  .btn {
+    @apply shadow-xl active:shadow-none z-button px-4 py-2 rounded-full w-auto text-[16px] font-semibold transition-all duration-300 ease-in-out active:ring-4 active:ring-my-medium-orange active:ring-offset-transparent;
+  }
+  
+  .title-text-mark::before {
+    content: ''; 
+    position: absolute;
+    left: -40px; 
+    top: 10%;
+    width: 16px; 
+    height: 88%;
+    background-color: #E4D5C2; 
+  }
 }
+

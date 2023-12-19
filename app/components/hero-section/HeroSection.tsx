@@ -16,10 +16,10 @@ const HeroSection = () => {
 			<div className="grid grid-cols-2 grid-rows-1 bg-my-light-blue h-[640px]">
 				{/* Hero content */}
 				<div className="flex flex-col gap-6 grid-c col-start-1 col-end-2 justify-center z-10">
-					<h1 className="text-my-dark-blue leading-none">
+					<h1 className="text-my-dark-blue leading-none title-text-mark text-">
 						Capturing Moments That Last a Lifetime
 					</h1>
-					<p className="text-[32px] font-light text-my-dark-blue leading-tight">
+					<p className="2xl:text-[32px] md:text-[28px] text-[18px] font-light text-my-dark-blue leading-tight">
 						Welcome to Jill&apos;s Artistic Photography Where Your
 						Treasured Moments Become Timeless Masterpieces You&apos;ll
 						Cherish Forever.
