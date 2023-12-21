@@ -1,1 +1,1 @@
-declare module '@animated-burgers/burger-squeeze';
+declare module "@animated-burgers/burger-squeeze";
