@@ -18,10 +18,10 @@ export default function Navbar() {
    return (
       <div
          id="NavbarSection"
-         className="1450:px-0 sticky top-0 z-nav bg-my-light-blue px-[4vw]"
+         className="sticky top-0 z-nav bg-my-light-blue px-[4vw] 1450:px-0"
       >
          {/* Desktop Navbar */}
-         <nav className="700:flex mx-auto hidden max-w-7xl items-center justify-between bg-transparent py-6">
+         <nav className="mx-auto hidden max-w-7xl items-center justify-between bg-transparent py-6 700:flex">
             <Logo type="dark" />
             <ul className="flex ">
                <li>
@@ -37,13 +37,13 @@ export default function Navbar() {
                   <NavLink label="Blog" path="/blog" />
                </li>
             </ul>
-            <Button className="btn bg-my-dark-blue text-my-light-beige shadow-xl hover:bg-my-light-beige hover:text-my-dark-blue">
+            <Button className="btn text-button bg-my-dark-blue text-my-light-beige shadow-xl hover:bg-my-light-beige hover:text-my-dark-blue">
                Contact Me
             </Button>
          </nav>
 
          {/* Mobile Navbar */}
-         <nav className="700:hidden mx-auto grid max-w-7xl grid-cols-3 items-center bg-transparent py-6">
+         <nav className="mx-auto grid max-w-7xl grid-cols-3 items-center bg-transparent py-6 700:hidden">
             <div className="justify-self-start">
                <Logo type="dark" />
             </div>
