@@ -10,15 +10,15 @@ interface TestimonialSectionProps {}
 const TestimonialSection: React.FC<TestimonialSectionProps> = ({}) => {
    return (
       <Section name="TestimonialSection" bgColor="my-medium-blue">
-         <div className="px-[4vw] py-[8vw] 1450:px-0">
+         <div className="gap-y-40x6x80 flex flex-col px-[4vw] py-[8vw] 1450:px-0">
             <div className="h-12 600:hidden" />
             <BrowHeadingParagraph
                heading="My Happy Clients"
                paragraph="Read about my client's experiences"
                color="my-light-beige"
             />
-            <Spacer size="large" />
-            <div className="grid auto-rows-auto gap-16">
+
+            <div className="grid auto-rows-auto gap-16 800:grid-cols-2">
                <Testimonial
                   name="John Doe"
                   avatar={avatar1}
