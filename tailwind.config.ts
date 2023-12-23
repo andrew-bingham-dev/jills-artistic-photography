@@ -116,6 +116,7 @@ module.exports = {
       gap: {
         '16x4x32': 'clamp(16px, 4vw, 32px)',
         '16x4x24': 'clamp(16px, 4vw, 24px)',
+        '40x6x80': 'clamp(40px, 6vw, 80px)',
       },
       padding: {
         '16x4x32': 'clamp(16px, 4vw, 32px)',
