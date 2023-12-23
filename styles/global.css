@@ -87,7 +87,7 @@
 
    p {
       font-weight: 400;
-      line-height: 100%;
+      line-height: 110%;
       @apply font-sans;
    }
 }
