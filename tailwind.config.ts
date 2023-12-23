@@ -87,6 +87,7 @@ module.exports = {
         'decor': '-3',
         'text': '3',
         'image': '5',
+        'hover-image': '6',
         'button': '10',
         'nav': '20'
       },
@@ -114,6 +115,7 @@ module.exports = {
       },
       gap: {
         '16x4x32': 'clamp(16px, 4vw, 32px)',
+        '16x4x24': 'clamp(16px, 4vw, 24px)',
       },
       padding: {
         '16x4x32': 'clamp(16px, 4vw, 32px)',
@@ -125,9 +127,14 @@ module.exports = {
         'h2': 'clamp(32px, 2.75vw, 40px)',
         'h4': 'clamp(24px, 2.2vw, 32px)',
         'brow': 'clamp(14px, 1.1vw, 16px)',
+        'button': 'clamp(14px, 1.1vw, 16px)',
         'para': 'clamp(16px, 1.24vw, 18px)',
       },
       plugins: [require("tailwindcss-animate")],
+      width: {
+        'photo-spread': 'clamp(350px, 100vw, 1100px)',
+        'photo-29': 'clamp(100px, 29vw, 415px)',
+      }
     }
   }
 }
