@@ -1,4 +1,3 @@
-import Spacer from '../Spacer'
 import Section from '../section/Section'
 import Logo from '../logo/Logo'
 import SocialIcons from '../social-icons/SocialIcons'
@@ -6,7 +5,7 @@ import SocialIcons from '../social-icons/SocialIcons'
 const Footer: React.FC = () => {
    return (
       <Section name="Footer" bgColor="my-dark-blue">
-         <div className="gap-y-40x6x80 flex flex-col px-[4vw] py-[8vw] 1450:px-0">
+         <footer className="flex flex-col gap-y-40x6x80 px-[4vw] py-[8vw] 1450:px-0">
             <div className="flex flex-col items-center gap-[8vw] text-center text-my-light-beige 900:flex-row 900:justify-between">
                <div className="translate-x-[50.015px] 900:translate-x-0">
                   <Logo type="light" />
@@ -31,7 +30,7 @@ const Footer: React.FC = () => {
                   <p className="text-para">Website by Koder</p>
                </a>
             </div>
-         </div>
+         </footer>
       </Section>
    )
 }

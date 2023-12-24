@@ -17,7 +17,7 @@ const HeroSection = () => {
          </div>
 
          {/* Hero text and image */}
-         <div className="grid auto-rows-auto bg-my-light-blue 600:grid-cols-2 800:min-h-[450px] 1000:min-h-[500px]">
+         <div className="grid auto-rows-auto bg-my-light-blue pt-[88px] 600:grid-cols-2 800:min-h-[450px] 1000:min-h-[500px]">
             {/* Hero text */}
             <div className="gap-16x4x32 z-10 order-2 flex flex-col justify-center px-[4vw] py-[8vw] 600:order-1 600:pl-[4vw] 600:pr-0 1450:pl-0">
                <h1 className="title-text-mark text-h1 leading-none text-my-dark-blue">
