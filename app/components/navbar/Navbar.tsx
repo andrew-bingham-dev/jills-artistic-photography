@@ -48,14 +48,14 @@ export default function Navbar() {
             <motion.div
                initial={{ x: -100, opacity: 0 }}
                animate={{ x: 0, opacity: 1 }}
-               transition={{ type: 'spring', delay: 0.2 }}
+               transition={{ duration: 0.3, delay: 0.2 }}
             >
                <Logo type="dark" />
             </motion.div>
             <motion.ul
                initial={{ y: -88, opacity: 0 }}
                animate={{ y: 0, opacity: 1 }}
-               transition={{ type: 'spring', delay: 0.2 }}
+               transition={{ duration: 0.3, delay: 0.2 }}
                className="flex "
             >
                <li>
@@ -74,7 +74,7 @@ export default function Navbar() {
             <motion.div
                initial={{ x: 100, opacity: 0 }}
                animate={{ x: 0, opacity: 1 }}
-               transition={{ type: 'spring', delay: 0.2 }}
+               transition={{ duration: 0.3, delay: 0.2 }}
             >
                <Button className="btn bg-my-dark-blue text-button text-my-light-beige shadow-xl hover:bg-my-light-beige hover:text-my-dark-blue">
                   Contact Me
@@ -87,7 +87,7 @@ export default function Navbar() {
             <motion.div
                initial={{ x: -100, opacity: 0 }}
                animate={{ x: 0, opacity: 1 }}
-               transition={{ type: 'spring', delay: 0.2 }}
+               transition={{ duration: 0.3, delay: 0.2 }}
                className="justify-self-start"
             >
                <Logo type="dark" />
@@ -95,7 +95,7 @@ export default function Navbar() {
             <motion.div
                initial={{ y: -100, opacity: 0 }}
                animate={{ y: 0, opacity: 1 }}
-               transition={{ type: 'spring', delay: 0.2 }}
+               transition={{ duration: 0.3, delay: 0.2 }}
             >
                <Button className="btn justify-self-center bg-my-dark-blue text-my-light-beige shadow-xl hover:bg-my-light-beige hover:text-my-dark-blue">
                   Contact Me
@@ -104,7 +104,7 @@ export default function Navbar() {
             <motion.div
                initial={{ x: 100, opacity: 0 }}
                animate={{ x: 0, opacity: 1 }}
-               transition={{ type: 'spring', delay: 0.2 }}
+               transition={{ duration: 0.3, delay: 0.2 }}
                className="justify-self-end"
             >
                <Burger onClick={toggleMenu} isOpen={isMenuOpen} />
