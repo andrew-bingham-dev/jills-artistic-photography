@@ -5,6 +5,28 @@ import Image from 'next/image'
 import CtaButton from '../cta-button/CtaButton'
 import { motion } from 'framer-motion'
 
+const containerVariant = {
+   hidden: { opacity: 0 },
+   show: {
+      opacity: 1,
+      transition: {
+         staggerChildren: 0.2,
+      },
+   },
+}
+
+const itemVariant = {
+   hidden: { scale: 0.5, opacity: 0 },
+   show: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+         duration: 0.2,
+         ease: 'easeInOut',
+      },
+   },
+}
+
 const HeroSection = () => {
    return (
       <Section
@@ -13,11 +35,24 @@ const HeroSection = () => {
          sectionClasses="overflow-y-clip max-h-[800px]"
       >
          {/* Background circles */}
-         <div>
-            <div className="z-decor-1 absolute -right-[500px] -top-[200px] h-[1500px] w-[1500px] rounded-full bg-black/5" />
-            <div className="z-decor-2 absolute -left-[300px] -top-[200px] h-[800px] w-[800px] rounded-full bg-black/5" />
-            <div className="z-decor-3 absolute -bottom-[200px] -left-[300px] h-[640px] w-[640px] rounded-full bg-black/5" />
-         </div>
+         <motion.div
+            variants={containerVariant}
+            initial="hidden"
+            animate="show"
+         >
+            <motion.div
+               variants={itemVariant}
+               className="z-decor-1 absolute -right-[500px] -top-[200px] h-[1500px] w-[1500px] rounded-full bg-black/5"
+            />
+            <motion.div
+               variants={itemVariant}
+               className="z-decor-2 absolute -left-[300px] -top-[200px] h-[800px] w-[800px] rounded-full bg-black/5"
+            />
+            <motion.div
+               variants={itemVariant}
+               className="z-decor-3 absolute -bottom-[200px] -left-[300px] h-[640px] w-[640px] rounded-full bg-black/5"
+            />
+         </motion.div>
 
          {/* Hero text and image */}
          <div className="grid auto-rows-auto bg-my-light-blue pt-[88px] 600:grid-cols-2 800:min-h-[450px] 1000:min-h-[500px]">
