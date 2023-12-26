@@ -11,7 +11,7 @@ const RiseAndAppear: React.FC<RiseAndAppearProps> = ({ children }) => {
          variants={riseAndAppear}
          initial="hidden"
          whileInView="show"
-         viewport={{ margin: '0px 0px -20% 0px', once: true }}
+         viewport={{ amount: 'some', margin: '0px 0px -20% 0px', once: true }}
       >
          {children}
       </motion.div>
