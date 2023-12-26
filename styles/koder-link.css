@@ -1,0 +1,12 @@
+.koder-link {
+   color: rgb(228, 213, 194);
+   text-decoration: none;
+   transition: all 0.3s ease-in-out;
+}
+
+.koder-link:hover {
+   text-shadow:
+      0 0 8px rgba(79, 209, 197, 0.6),
+      0 0 10px rgba(79, 209, 197, 0.8),
+      0 0 15px rgba(79, 209, 197, 1);
+}

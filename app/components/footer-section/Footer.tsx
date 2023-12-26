@@ -1,6 +1,7 @@
 import Section from '../section/Section'
 import Logo from '../logo/Logo'
 import SocialIcons from '../social-icons/SocialIcons'
+import '../../../styles/koder-link.css'
 
 const Footer: React.FC = () => {
    return (
@@ -27,7 +28,9 @@ const Footer: React.FC = () => {
                   </p>
                </a>
                <a href="#">
-                  <p className="text-para">Website by Koder</p>
+                  <p className="text-para transition-all ">
+                     Website by <span className="koder-link">Koder</span>
+                  </p>
                </a>
             </div>
          </footer>
