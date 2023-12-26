@@ -26,7 +26,7 @@ const staggerItemVariants = {
    animate: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.5, ease: 'easeInOut' },
+      transition: { duration: 0.3, ease: 'easeOut' },
       viewport: {
          once: true,
       },
@@ -51,7 +51,7 @@ const PhotoSpread = () => {
             <motion.div variants={staggerItemVariants}>
                <motion.div
                   initial={{ rotate: '0deg' }}
-                  animate={{ rotate: '12deg' }}
+                  animate={{ rotate: '12deg', top: '2%', left: '4%' }}
                   whileHover={{
                      scale: 1.1,
                      rotate: '0deg',
@@ -70,9 +70,8 @@ const PhotoSpread = () => {
             </motion.div>
 
             {/* w:416px h:415px - w:29% */}
-            <motion.div layout variants={staggerItemVariants}>
+            <motion.div variants={staggerItemVariants}>
                <motion.div
-                  layout
                   initial={{ rotate: '0deg' }}
                   animate={{ rotate: '-2deg' }}
                   whileHover={{
@@ -93,9 +92,8 @@ const PhotoSpread = () => {
             </motion.div>
 
             {/* w:416px h:234px - w:29% */}
-            <motion.div layout variants={staggerItemVariants}>
+            <motion.div variants={staggerItemVariants}>
                <motion.div
-                  layout
                   initial={{ rotate: '0deg' }}
                   animate={{ rotate: '6deg' }}
                   whileHover={{
@@ -116,9 +114,8 @@ const PhotoSpread = () => {
             </motion.div>
 
             {/* w:416px h:416px - w:29% */}
-            <motion.div layout variants={staggerItemVariants}>
+            <motion.div variants={staggerItemVariants}>
                <motion.div
-                  layout
                   initial={{ rotate: '0deg' }}
                   animate={{ rotate: '12deg' }}
                   whileHover={{
@@ -139,9 +136,8 @@ const PhotoSpread = () => {
             </motion.div>
 
             {/* w:416px h:416px - w:29% */}
-            <motion.div layout variants={staggerItemVariants}>
+            <motion.div variants={staggerItemVariants}>
                <motion.div
-                  layout
                   initial={{ rotate: '0deg' }}
                   animate={{ rotate: '25deg' }}
                   whileHover={{
@@ -162,9 +158,8 @@ const PhotoSpread = () => {
             </motion.div>
 
             {/* w:515px h:515px - w40% */}
-            <motion.div layout variants={staggerItemVariants}>
+            <motion.div variants={staggerItemVariants}>
                <motion.div
-                  layout
                   initial={{ rotate: '0deg' }}
                   animate={{ rotate: '-6deg' }}
                   whileHover={{
@@ -186,11 +181,12 @@ const PhotoSpread = () => {
 
             {/* w:712px h:712px - w:29% */}
 
-            <motion.div layout variants={staggerItemVariants}>
+            <motion.div variants={staggerItemVariants}>
                <motion.div
-                  layout
                   initial={{ rotate: '0deg' }}
-                  animate={{ rotate: '9deg' }}
+                  animate={{
+                     rotate: '9deg',
+                  }}
                   whileHover={{
                      scale: 1.1,
                      rotate: '0deg',
