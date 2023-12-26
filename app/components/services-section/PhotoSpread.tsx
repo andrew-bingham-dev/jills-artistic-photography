@@ -21,7 +21,7 @@ const staggerContainerVariants = {
 const staggerItemVariants = {
    initial: {
       opacity: 0,
-      scale: 0.8,
+      scale: 1.3,
    },
    animate: {
       opacity: 1,
