@@ -1,4 +1,3 @@
-import Section from '../section/Section'
 import Logo from '../logo/Logo'
 import SocialIcons from '../social-icons/SocialIcons'
 import '../../../styles/koder-link.css'
