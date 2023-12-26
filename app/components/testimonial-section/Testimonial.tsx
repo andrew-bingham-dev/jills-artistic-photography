@@ -26,6 +26,7 @@ const Testimonial: React.FC<Testimonial> = ({ quote, avatar, name }) => {
             variants={containerVariants}
             initial="hidden"
             whileInView="show"
+            viewport={{ amount: 'all', once: true }}
             className="flex flex-row gap-1"
          >
             <motion.div variants={containerVariants}>
