@@ -51,7 +51,7 @@ const Gallery: React.FC<GalleryProps> = ({ images, heading }) => {
                <motion.div
                   variants={imageVariants}
                   key={index}
-                  className="relative h-[300px] w-[300px] flex-shrink-0 cursor-pointer"
+                  className="relative h-[300px] w-[300px] flex-shrink-0"
                >
                   <Image
                      src={image.url}
