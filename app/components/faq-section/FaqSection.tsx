@@ -13,7 +13,9 @@ const FaqSection: React.FC = () => {
                <BrowHeadingParagraph
                   color="my-dark-blue"
                   heading="FAQs"
-                  paragraph="Find answers to common questions about my services and process."
+                  paragraph={[
+                     'Find answers to common questions about my services and process.',
+                  ]}
                />
             </RiseAndAppear>
             <RiseAndAppear>
@@ -24,7 +26,9 @@ const FaqSection: React.FC = () => {
                   headingType="h4"
                   color="my-dark-blue"
                   heading="Still Have Questions?"
-                  paragraph="Contact me directly to discuss your photography needs."
+                  paragraph={[
+                     'Contact me directly to discuss your photography needs.',
+                  ]}
                />
             </RiseAndAppear>
          </div>

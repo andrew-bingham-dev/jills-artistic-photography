@@ -17,7 +17,9 @@ const ServicesSection = () => {
                      color="my-light-beige"
                      brow="Capture"
                      heading="Preserve Your Precious Moments"
-                     paragraph="Professional photography services for weddings, portraits, and more."
+                     paragraph={[
+                        'Professional photography services for weddings, portraits, and more.',
+                     ]}
                   />
                </RiseAndAppear>
                <Spacer size="large" />

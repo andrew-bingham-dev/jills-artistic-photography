@@ -16,7 +16,7 @@ const TestimonialSection: React.FC = () => {
             <RiseAndAppear>
                <BrowHeadingParagraph
                   heading="My Happy Clients"
-                  paragraph="Read about my client's experiences"
+                  paragraph={["Read about my client's experiences"]}
                   color="my-light-beige"
                />
             </RiseAndAppear>

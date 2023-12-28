@@ -22,7 +22,7 @@ const ServicesCardContainer = () => {
             <ServicesCard
                brow="Moments"
                heading="Wedding Photography"
-               paragraph="Capture the beauty and magic of your special day."
+               paragraph={['Capture the beauty and magic of your special day.']}
                image={weddingImage04}
                altImageDescription="Wedding photo"
                imagePosition="center 65%"
@@ -40,7 +40,9 @@ const ServicesCardContainer = () => {
             <ServicesCard
                brow="Expressions"
                heading="Portrait Photography"
-               paragraph="Preserve your unique personality in stunning portraits."
+               paragraph={[
+                  'Preserve your unique personality in stunning portraits.',
+               ]}
                image={portraitImage01}
                altImageDescription="Portrait photo"
             />
@@ -57,7 +59,9 @@ const ServicesCardContainer = () => {
             <ServicesCard
                brow="Life"
                heading="Nature Photography"
-               paragraph="Discover the beauty of the natural world through captivating photographs."
+               paragraph={[
+                  'Discover the beauty of the natural world through captivating photographs.',
+               ]}
                image={natureImage04}
                altImageDescription="Nature photo"
             />

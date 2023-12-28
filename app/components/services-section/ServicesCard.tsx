@@ -4,7 +4,7 @@ import Image, { StaticImageData } from 'next/image'
 interface ServicesCardProps {
    brow: string
    heading: string
-   paragraph: string
+   paragraph: string[]
    image: StaticImageData
    altImageDescription: string
    imagePosition?: string
