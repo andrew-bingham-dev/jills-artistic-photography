@@ -1,5 +1,7 @@
 'use client'
 
+import { motion } from 'framer-motion'
+
 interface GallerySlideButtonProps {
    direction: 'left' | 'right'
    onClick: () => void
@@ -10,8 +12,8 @@ const GallerySlideButton: React.FC<GallerySlideButtonProps> = ({
    onClick,
 }) => {
    return (
-      <button
-         className="border-1 aspect-square rounded-full border border-my-dark-blue p-3"
+      <motion.button
+         className="border-1 aspect-square rounded-full border border-my-dark-blue p-3 transition duration-300 hover:border-my-light-beige hover:text-my-light-beige"
          onClick={() => onClick()}
       >
          {direction === 'left' && (
@@ -46,7 +48,7 @@ const GallerySlideButton: React.FC<GallerySlideButtonProps> = ({
                />
             </svg>
          )}
-      </button>
+      </motion.button>
    )
 }
 

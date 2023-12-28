@@ -1,4 +1,8 @@
+'use client'
+
+import Spacer from '../Spacer'
 import BrowHeadingParagraph from '../brow-heading-paragraph/BrowHeadingParagraph'
+import RiseAndAppear from '../motions/rise-and-appear'
 import Section from '../section/Section'
 import Gallery from './Gallery'
 import Image from 'next/image'
@@ -102,6 +106,7 @@ const natureGallery = [
 const GalleriesSection = () => {
    return (
       <Section name="GallerySection" bgColor="my-gallery-gradient">
+         <Spacer size="nav" />
          <Image
             src="/svg/camera_watermark.svg"
             alt="background"
@@ -111,11 +116,14 @@ const GalleriesSection = () => {
             objectPosition="center 15%"
          />
          <div className="flex flex-col gap-[4vw] px-[4vw] py-[8vw] 1450:px-0">
-            <BrowHeadingParagraph
-               color="my-dark-blue"
-               heading="Welcome to My Galleries"
-               paragraph={paragraphText}
-            />
+            <RiseAndAppear>
+               <BrowHeadingParagraph
+                  color="my-dark-blue"
+                  heading="Welcome to My Galleries"
+                  paragraph={paragraphText}
+               />
+            </RiseAndAppear>
+            <Spacer />
             <Gallery heading="Wedding" images={weddingGallery} />
             <Gallery heading="Portrait" images={portraitGallery} />
             <Gallery heading="Nature" images={natureGallery} />
