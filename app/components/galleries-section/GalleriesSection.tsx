@@ -124,8 +124,8 @@ const GalleriesSection = () => {
                />
             </RiseAndAppear>
             <Spacer />
-            <Gallery heading="Wedding" images={weddingGallery} />
-            <Gallery heading="Portrait" images={portraitGallery} />
+            <Gallery heading="Weddings" images={weddingGallery} />
+            <Gallery heading="Portraits" images={portraitGallery} />
             <Gallery heading="Nature" images={natureGallery} />
          </div>
       </Section>
