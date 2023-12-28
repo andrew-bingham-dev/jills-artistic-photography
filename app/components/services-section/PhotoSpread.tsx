@@ -111,7 +111,6 @@ const PhotoSpread = () => {
                id="photo1"
                variants={photoVariants}
                initial={{ rotate: '12deg', opacity: 0, y: -100, scale: 1 }}
-               // animate={{ rotate: '12deg', top: '2%', left: '4%' }}
                whileHover="hover"
                className="absolute left-[4%] top-[2%] z-image aspect-[3/2] w-[29%] rotate-[12deg] overflow-clip shadow-md"
             >
