@@ -1,11 +1,6 @@
 'use client'
 
-import {
-   motion,
-   useMotionValue,
-   useMotionValueEvent,
-   useScroll,
-} from 'framer-motion'
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
 import { useState } from 'react'
 import NavLink from './NavLink'
 import { Button } from '@/components/ui/button'
@@ -14,7 +9,11 @@ import Burger from '@animated-burgers/burger-squeeze'
 import '@animated-burgers/burger-squeeze/dist/styles.css'
 import '../../../styles/burger.css'
 
-export default function Navbar() {
+interface NavbarProps {
+   bgColor?: string
+}
+
+const Navbar: React.FC<NavbarProps> = ({ bgColor = 'my-light-blue' }) => {
    const [isMenuOpen, setIsMenuOpen] = useState(false)
    const [isNavVisible, setIsNavVisible] = useState(true)
    const { scrollY } = useScroll()
@@ -37,7 +36,7 @@ export default function Navbar() {
       <motion.div
          layout
          id="NavbarSection"
-         className="fixed top-0 z-nav w-full bg-my-light-blue px-[4vw] 1450:px-0"
+         className={`fixed top-0 z-nav w-full bg-${bgColor} px-[4vw] 1450:px-0`}
          initial={{ y: -88 }}
          animate={isNavVisible ? 'visible' : 'hidden'}
          transition={{ duration: 0.3, ease: 'easeInOut' }}
@@ -113,3 +112,5 @@ export default function Navbar() {
       </motion.div>
    )
 }
+
+export default Navbar
