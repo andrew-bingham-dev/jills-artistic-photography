@@ -80,7 +80,7 @@ const Navbar: React.FC<NavbarProps> = ({ bgColor = 'my-light-blue' }) => {
                   <NavLink label="Portfolio" path="/portfolio" />
                </li>
                <li>
-                  <NavLink label="About Me" path="/about" />
+                  <NavLink label="About Me" path="/about-me" />
                </li>
                <li>
                   <NavLink label="Blog" path="/blog" />
@@ -153,6 +153,14 @@ const Navbar: React.FC<NavbarProps> = ({ bgColor = 'my-light-blue' }) => {
                         href="/portfolio"
                      >
                         Portfolio
+                     </Link>
+                  </motion.div>
+                  <motion.div variants={mobileMenuLinkVariants}>
+                     <Link
+                        className="p-4 text-2xl transition duration-300 hover:text-my-light-beige active:text-my-light-beige"
+                        href="/about-me"
+                     >
+                        About Me
                      </Link>
                   </motion.div>
                </motion.div>
