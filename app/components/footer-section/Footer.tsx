@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
    return (
       <section
          id="footer"
-         className="sticky bottom-0 z-section overflow-x-clip bg-my-dark-blue"
+         className="z-footer sticky bottom-0 overflow-x-clip bg-my-dark-blue"
       >
          <footer className="relative z-container mx-auto flex max-w-7xl flex-col gap-y-40x6x80 px-[4vw] py-[8vw] 1450:px-0">
             <div className="flex flex-col items-center gap-[8vw] text-center text-my-light-beige 900:flex-row 900:justify-between">
