@@ -82,6 +82,7 @@ module.exports = {
         serif: ['var(--font-serif)'],
       },
       zIndex: {
+        'footer': '-6',
         'section': '-5',
         'container': '0',
         'decor': '-3',
@@ -135,6 +136,9 @@ module.exports = {
       width: {
         'photo-spread': 'clamp(350px, 100vw, 1100px)',
         'photo-29': 'clamp(100px, 29vw, 415px)',
+      },
+      backgroundImage: {
+        'my-gallery-gradient': "linear-gradient(334deg, #7F807B 0%, #B5B1AF 41.77%, rgba(181, 177, 175, 0.70) 100%)",
       }
     }
   }
