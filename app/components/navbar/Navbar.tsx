@@ -1,6 +1,11 @@
 'use client'
 
-import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
+import {
+   AnimatePresence,
+   motion,
+   useMotionValueEvent,
+   useScroll,
+} from 'framer-motion'
 import { useState } from 'react'
 import NavLink from './NavLink'
 import { Button } from '@/components/ui/button'
@@ -8,6 +13,17 @@ import Logo from '../logo/Logo'
 import Burger from '@animated-burgers/burger-squeeze'
 import '@animated-burgers/burger-squeeze/dist/styles.css'
 import '../../../styles/burger.css'
+import Link from 'next/link'
+
+const mobileMenuVariants = {
+   hidden: { opacity: 0, height: 0 },
+   visible: { opacity: 1, height: 250 },
+}
+
+const mobileMenuLinkVariants = {
+   hidden: { opacity: 0, y: -100 },
+   visible: { opacity: 1, y: 0 },
+}
 
 interface NavbarProps {
    bgColor?: string
@@ -108,6 +124,39 @@ const Navbar: React.FC<NavbarProps> = ({ bgColor = 'my-light-blue' }) => {
             >
                <Burger onClick={toggleMenu} isOpen={isMenuOpen} />
             </motion.div>
+
+            {/* Mobile Menu */}
+            {isMenuOpen && (
+               <motion.div
+                  layout
+                  variants={mobileMenuVariants}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ duration: 0.3, staggerChildren: 0.3 }}
+                  className={`absolute left-0 right-0 top-[88px] flex h-[250px] w-full flex-col bg-${bgColor} gap-y-8 p-12 shadow-xl`}
+               >
+                  <motion.div
+                     variants={mobileMenuLinkVariants}
+                     className="w-full"
+                  >
+                     <Link
+                        className="p-4 text-2xl transition duration-300 hover:text-my-light-beige active:text-my-light-beige"
+                        href="/"
+                     >
+                        Home
+                     </Link>
+                  </motion.div>
+
+                  <motion.div variants={mobileMenuLinkVariants}>
+                     <Link
+                        className="p-4 text-2xl transition duration-300 hover:text-my-light-beige active:text-my-light-beige"
+                        href="/portfolio"
+                     >
+                        Portfolio
+                     </Link>
+                  </motion.div>
+               </motion.div>
+            )}
          </nav>
       </motion.div>
    )
