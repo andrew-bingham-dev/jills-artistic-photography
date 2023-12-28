@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  safelist: ['bg-my-light-blue', 'bg-my-medium-blue', 'bg-my-dark-blue'],
+  safelist: ['bg-my-light-blue', 'bg-my-medium-blue', 'bg-my-dark-blue', 'bg-my-gallery-gradient'],
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
