@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  safelist: ['bg-my-light-blue', 'bg-my-medium-blue', 'bg-my-dark-blue', 'bg-my-gallery-gradient', 'bg-my-medium-beige'],
+  safelist: ['bg-my-light-blue', 'bg-my-medium-blue', 'bg-my-dark-blue', 'bg-my-gallery-gradient', 'bg-my-medium-beige', 'bg-my-about-gradient', 'bg-my-light-beige', 'bg-my-pale-beige'],
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -22,6 +22,7 @@ module.exports = {
         'my-medium-blue': '#546677',
         'my-dark-blue': '#191F24',
         'my-medium-orange': '#FE7F2D',
+        'my-pale-beige': '#F3EEE8',
         'my-light-beige': '#E4D5C2',
         'my-medium-beige': '#B5B1AF',
         border: "hsl(var(--border))",
@@ -140,6 +141,7 @@ module.exports = {
       },
       backgroundImage: {
         'my-gallery-gradient': "linear-gradient(334deg, #7F807B 0%, #B5B1AF 41.77%, rgba(181, 177, 175) 100%)",
+        'my-about-gradient': 'linear-gradient(334deg, #A6A29E -100%, #CCC8C3 0%, #F3EEE8 100%)'
       }
     }
   }
