@@ -5,7 +5,8 @@ import Gallery from './Gallery'
 const paragraphText = [
    'A selection of my favorite, captured moments.',
    'Each image tells a story, a frozen slice of time that speaks to the heart.',
-   'From the spontaneous joy of weddings, to the serene beauty of nature, I strive to capture the essence of each moment.',
+   'From the spontaneous joy of weddings, to the serene beauty of nature,',
+   'I strive to capture the essence of each moment.',
 ]
 
 const weddingGallery = [
@@ -49,6 +50,8 @@ const GalleriesSection = () => {
                paragraph={paragraphText}
             />
             <Gallery heading="Wedding" images={weddingGallery} />
+            <Gallery heading="Portrait" images={weddingGallery} />
+            <Gallery heading="Nature" images={weddingGallery} />
          </div>
       </Section>
    )
