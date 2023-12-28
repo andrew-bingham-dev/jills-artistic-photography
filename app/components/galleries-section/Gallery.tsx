@@ -48,7 +48,7 @@ const Gallery: React.FC<GalleryProps> = ({ images, heading }) => {
                </div>
             ))}
          </div>
-         <div className="flex justify-end gap-8">
+         <div className="flex justify-end gap-4">
             <GallerySlideButton
                direction="left"
                onClick={() => scroll('left')}
