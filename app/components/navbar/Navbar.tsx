@@ -91,7 +91,7 @@ const Navbar: React.FC<NavbarProps> = ({ bgColor = 'my-light-blue' }) => {
                animate={{ x: 0, opacity: 1 }}
                transition={{ duration: 0.3, delay: 0.2 }}
             >
-               <Button className="btn bg-my-dark-blue text-button text-my-light-beige shadow-xl hover:bg-my-light-beige hover:text-my-dark-blue">
+               <Button className="btn select-none bg-my-dark-blue text-button text-my-light-beige shadow-xl hover:bg-my-light-beige hover:text-my-dark-blue">
                   Contact Me
                </Button>
             </motion.div>
