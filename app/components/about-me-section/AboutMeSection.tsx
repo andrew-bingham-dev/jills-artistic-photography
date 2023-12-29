@@ -5,28 +5,6 @@ import Image from 'next/image'
 import CtaButton from '../cta-button/CtaButton'
 import { motion } from 'framer-motion'
 
-const containerVariant = {
-   hidden: { opacity: 0 },
-   show: {
-      opacity: 1,
-      transition: {
-         staggerChildren: 0.2,
-      },
-   },
-}
-
-const itemVariant = {
-   hidden: { scale: 0.5, opacity: 0 },
-   show: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-         duration: 0.2,
-         ease: 'easeInOut',
-      },
-   },
-}
-
 const HeroSection = () => {
    return (
       <Section
@@ -35,19 +13,28 @@ const HeroSection = () => {
          sectionClasses="overflow-y-clip max-h-[800px]"
       >
          {/* Decorations */}
-         <div>
+         <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 5 }}
+         >
             <Image
                src="/svg/plus_decor.svg"
                alt="background"
                layout="fill"
                objectFit="contain"
             />
-         </div>
+         </motion.div>
 
          {/* Hero text and image */}
          <div className="grid auto-rows-auto bg-my-about-gradient pt-[88px] 600:grid-cols-2 800:min-h-[450px] 1000:min-h-[500px]">
             {/* Decorations */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            <motion.div
+               initial={{ opacity: 0 }}
+               animate={{ opacity: 1 }}
+               transition={{ duration: 5 }}
+               className="absolute inset-0 flex items-center justify-center"
+            >
                <div className="flex aspect-square w-[40vw] items-center justify-center rounded-full border-2 border-black opacity-10">
                   <motion.div
                      animate={{ rotateY: 360 }}
@@ -59,7 +46,7 @@ const HeroSection = () => {
                      className="absolute aspect-square w-[35vw] rounded-full border-2 border-dashed border-black"
                   />
                </div>
-            </div>
+            </motion.div>
 
             {/* Hero text */}
             <motion.div
