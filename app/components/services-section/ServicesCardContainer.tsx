@@ -26,6 +26,7 @@ const ServicesCardContainer = () => {
                image={weddingImage04}
                altImageDescription="Wedding photo"
                imagePosition="center 65%"
+               url="/portfolio/#weddings"
             />
          </motion.div>
          <motion.div
@@ -45,6 +46,7 @@ const ServicesCardContainer = () => {
                ]}
                image={portraitImage01}
                altImageDescription="Portrait photo"
+               url="/portfolio/#portraits"
             />
          </motion.div>
          <motion.div
@@ -64,6 +66,7 @@ const ServicesCardContainer = () => {
                ]}
                image={natureImage04}
                altImageDescription="Nature photo"
+               url="/portfolio/#nature"
             />
          </motion.div>
       </div>

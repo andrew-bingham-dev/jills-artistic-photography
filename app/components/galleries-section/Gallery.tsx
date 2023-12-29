@@ -34,7 +34,10 @@ const Gallery: React.FC<GalleryProps> = ({ images, heading }) => {
    }
 
    return (
-      <div className="flex w-full flex-col gap-[2vw]">
+      <div
+         id={heading.toLowerCase()}
+         className="flex w-full flex-col gap-[2vw]"
+      >
          <RiseAndAppear>
             <h4 className="text-h4">{heading}</h4>
          </RiseAndAppear>
