@@ -1,7 +1,7 @@
 'use client'
 
 import BrowHeadingParagraph from '../brow-heading-paragraph/BrowHeadingParagraph'
-import RiseAndAppear from '../motions/rise-and-appear'
+import RiseAndAppear from '../motions/RiseAndAppear'
 import Section from '../section/Section'
 import FaqAccordion from './FaqAccordion'
 

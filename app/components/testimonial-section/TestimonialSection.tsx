@@ -5,7 +5,7 @@ import Section from '../section/Section'
 import Testimonial from './Testimonial'
 import avatar1 from '../../../public/png/avatars/john_doe.png'
 import avatar2 from '../../../public/png/avatars/jane_smith.png'
-import RiseAndAppear from '../motions/rise-and-appear'
+import RiseAndAppear from '../motions/RiseAndAppear'
 
 const TestimonialSection: React.FC = () => {
    return (

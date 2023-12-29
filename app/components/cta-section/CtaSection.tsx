@@ -2,7 +2,7 @@
 
 import Section from '../section/Section'
 import CtaButton from '../cta-button/CtaButton'
-import RiseAndAppear from '../motions/rise-and-appear'
+import RiseAndAppear from '../motions/RiseAndAppear'
 
 const CtaSection: React.FC = () => {
    return (

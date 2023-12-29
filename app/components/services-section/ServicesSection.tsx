@@ -5,7 +5,7 @@ import BrowHeadingParagraph from '../brow-heading-paragraph/BrowHeadingParagraph
 import Section from '../section/Section'
 import ServicesCardContainer from './ServicesCardContainer'
 import PhotoSpread from './PhotoSpread'
-import RiseAndAppear from '../motions/rise-and-appear'
+import RiseAndAppear from '../motions/RiseAndAppear'
 
 const ServicesSection = () => {
    return (
