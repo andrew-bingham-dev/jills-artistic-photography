@@ -34,8 +34,33 @@ const HeroSection = () => {
          bgColor="my-about-gradient"
          sectionClasses="overflow-y-clip max-h-[800px]"
       >
+         {/* Decorations */}
+         <div>
+            <Image
+               src="/svg/plus_decor.svg"
+               alt="background"
+               layout="fill"
+               objectFit="contain"
+            />
+         </div>
+
          {/* Hero text and image */}
-         <div className="bg-my-about-gradient grid auto-rows-auto pt-[88px] 600:grid-cols-2 800:min-h-[450px] 1000:min-h-[500px]">
+         <div className="grid auto-rows-auto bg-my-about-gradient pt-[88px] 600:grid-cols-2 800:min-h-[450px] 1000:min-h-[500px]">
+            {/* Decorations */}
+            <div className="absolute inset-0 flex items-center justify-center">
+               <div className="flex aspect-square w-[40vw] items-center justify-center rounded-full border-2 border-black opacity-10">
+                  <motion.div
+                     animate={{ rotateY: 360 }}
+                     transition={{
+                        duration: 6,
+                        ease: 'linear',
+                        repeat: Infinity,
+                     }}
+                     className="absolute aspect-square w-[35vw] rounded-full border-2 border-dashed border-black"
+                  />
+               </div>
+            </div>
+
             {/* Hero text */}
             <motion.div
                initial={{ x: -100, opacity: 0 }}
