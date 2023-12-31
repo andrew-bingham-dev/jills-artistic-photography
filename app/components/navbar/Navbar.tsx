@@ -106,6 +106,7 @@ const Navbar: React.FC<NavbarProps> = ({ bgColor = 'my-light-blue' }) => {
                initial={{ y: -100, opacity: 0 }}
                animate={{ y: 0, opacity: 1 }}
                transition={{ duration: 0.3, delay: 0.2 }}
+               className="justify-self-center"
             >
                <Button className="btn justify-self-center bg-my-dark-blue text-my-light-beige shadow-xl hover:bg-my-light-beige hover:text-my-dark-blue">
                   Contact Me
