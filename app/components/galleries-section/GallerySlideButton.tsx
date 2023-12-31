@@ -1,7 +1,5 @@
 'use client'
-// TODO: Fix hover effect on slide buttons
 // TODO: Ensure slide buttons snap to set positions
-// TODO: Fix slide button zIndex
 import { motion } from 'framer-motion'
 
 interface GallerySlideButtonProps {
@@ -15,7 +13,7 @@ const GallerySlideButton: React.FC<GallerySlideButtonProps> = ({
 }) => {
    return (
       <motion.button
-         className="border-1 aspect-square rounded-full border border-my-dark-blue p-3 transition duration-300 hover:border-my-light-beige hover:text-my-light-beige"
+         className="border-1 aspect-square rounded-full border border-my-dark-blue p-3 text-my-dark-blue transition duration-300 700:hover:border-my-light-beige 700:hover:text-my-light-beige"
          onClick={() => onClick()}
       >
          {direction === 'left' && (

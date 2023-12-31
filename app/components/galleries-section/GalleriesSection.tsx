@@ -115,7 +115,7 @@ const GalleriesSection = () => {
             objectFit="contain"
             objectPosition="center 15%"
          />
-         <div className="flex flex-col gap-[4vw] px-[4vw] py-[8vw] 1450:px-0">
+         <div className="relative flex flex-col gap-[4vw] px-[4vw] py-[8vw] 1450:px-0">
             <RiseAndAppear>
                <BrowHeadingParagraph
                   color="my-dark-blue"
