@@ -16,16 +16,36 @@ const Footer: React.FC = () => {
                </div>
                <ul className="flex flex-col gap-[4vw] 900:flex-row">
                   <li>
-                     <Link href="/">Home</Link>
+                     <Link
+                        href="/"
+                        className="transition-colors hover:text-white"
+                     >
+                        Home
+                     </Link>
                   </li>
                   <li>
-                     <Link href="/portfolio">Portfolio</Link>
+                     <Link
+                        href="/portfolio"
+                        className="transition-colors hover:text-white"
+                     >
+                        Portfolio
+                     </Link>
                   </li>
                   <li>
-                     <Link href="/about-me">About Me</Link>
+                     <Link
+                        href="/about-me"
+                        className="transition-colors hover:text-white"
+                     >
+                        About Me
+                     </Link>
                   </li>
                   <li>
-                     <Link href="/blog">Blog</Link>
+                     <Link
+                        href="/blog"
+                        className="transition-colors hover:text-white"
+                     >
+                        Blog
+                     </Link>
                   </li>
                </ul>
                <SocialIcons />
