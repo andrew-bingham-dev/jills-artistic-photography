@@ -1,5 +1,5 @@
 'use client'
-// TODO: fix card hover issue
+
 import ServicesCard from './ServicesCard'
 import weddingImage04 from '../../../public/jpg/wedding/wedding_04.jpg'
 import portraitImage01 from '../../../public/jpg/portrait/portrait_01.jpg'

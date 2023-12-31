@@ -98,7 +98,6 @@ const PhotoSpread = () => {
    }, [isInView, animate])
 
    return (
-      // TODO: Fix the gradient circle so that it's over the next section
       <div className="relative z-[2] mt-[12vw] aspect-[5/3.5] w-photo-spread">
          {/* gradient circle */}
 
