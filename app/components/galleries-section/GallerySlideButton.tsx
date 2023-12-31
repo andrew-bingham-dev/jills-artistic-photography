@@ -1,6 +1,7 @@
 'use client'
 // TODO: Fix hover effect on slide buttons
 // TODO: Ensure slide buttons snap to set positions
+// TODO: Fix slide button zIndex
 import { motion } from 'framer-motion'
 
 interface GallerySlideButtonProps {
