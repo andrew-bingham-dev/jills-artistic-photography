@@ -5,6 +5,7 @@
 }
 
 .koder-link:hover {
+   color: white;
    text-shadow:
       0 0 8px rgba(79, 209, 197, 0.6),
       0 0 10px rgba(79, 209, 197, 0.8),
