@@ -33,6 +33,7 @@ const HeroSection = () => {
          name="HeroSection"
          bgColor="my-light-blue"
          sectionClasses="overflow-y-clip max-h-[800px]"
+         zIndex={2}
       >
          {/* Background circles */}
          <motion.div

@@ -8,14 +8,16 @@ import TestimonialSection from './components/testimonial-section/TestimonialSect
 
 export default function Home() {
    return (
-      <main>
-         <Navbar />
-         <HeroSection />
-         <ServicesSection />
-         <TestimonialSection />
-         <FaqSection />
-         <CtaSection />
+      <>
+         <main className="relative z-10">
+            <Navbar />
+            <HeroSection />
+            <ServicesSection />
+            <TestimonialSection />
+            <FaqSection />
+            <CtaSection />
+         </main>
          <Footer />
-      </main>
+      </>
    )
 }
