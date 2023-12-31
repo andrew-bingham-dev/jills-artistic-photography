@@ -42,15 +42,15 @@ const HeroSection = () => {
          >
             <motion.div
                variants={itemVariant}
-               className="z-decor-1 absolute -right-[500px] -top-[200px] h-[1500px] w-[1500px] rounded-full bg-black/5"
+               className="absolute -right-[500px] -top-[200px] h-[1500px] w-[1500px] rounded-full bg-black/5"
             />
             <motion.div
                variants={itemVariant}
-               className="z-decor-2 absolute -left-[300px] -top-[200px] h-[800px] w-[800px] rounded-full bg-black/5"
+               className="absolute -left-[300px] -top-[200px] h-[800px] w-[800px] rounded-full bg-black/5"
             />
             <motion.div
                variants={itemVariant}
-               className="z-decor-3 absolute -bottom-[200px] -left-[300px] h-[640px] w-[640px] rounded-full bg-black/5"
+               className="absolute -bottom-[200px] -left-[300px] h-[640px] w-[640px] rounded-full bg-black/5"
             />
          </motion.div>
 
@@ -61,7 +61,7 @@ const HeroSection = () => {
                initial={{ x: -100, opacity: 0 }}
                animate={{ x: 0, opacity: 1 }}
                transition={{ duration: 0.3, delay: 0.4 }}
-               className="z-10 order-2 flex flex-col justify-center gap-16x4x32 px-[4vw] py-[8vw] 600:order-1 600:pl-[4vw] 600:pr-0 1450:pl-0"
+               className="order-2 flex flex-col justify-center gap-16x4x32 px-[4vw] py-[8vw] 600:order-1 600:pl-[4vw] 600:pr-0 1450:pl-0"
             >
                <h1 className="title-text-mark text-h1 leading-none text-my-dark-blue">
                   Capturing Moments That Last a Lifetime
@@ -86,7 +86,7 @@ const HeroSection = () => {
             </motion.div>
 
             {/* Hero image */}
-            <div className="relative z-[2] order-1 600:order-2">
+            <div className="relative order-1 600:order-2">
                <motion.div
                   initial={{ x: 100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}

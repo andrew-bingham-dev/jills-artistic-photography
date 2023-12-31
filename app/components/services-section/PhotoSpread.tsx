@@ -7,7 +7,7 @@ import RadialGradient from '../radial-gradient/RadialGradient'
 import { useEffect } from 'react'
 
 const photoVariants = {
-   hover: { scale: 1.1, rotate: '0deg', zIndex: 6 },
+   hover: { scale: 1.1, rotate: '0deg', zIndex: 2 },
 }
 
 const PhotoSpread = () => {
@@ -20,7 +20,6 @@ const PhotoSpread = () => {
 
    useEffect(() => {
       if (isInView) {
-         console.log('** isInView: true')
          animatePhotos()
       }
 
@@ -99,8 +98,8 @@ const PhotoSpread = () => {
    }, [isInView, animate])
 
    return (
-      // TODO: Fix the gradient circle so that it's centered on the image
-      <div className="relative mt-[12vw] aspect-[5/3.5] w-photo-spread">
+      // TODO: Fix the gradient circle so that it's over the next section
+      <div className="relative z-[2] mt-[12vw] aspect-[5/3.5] w-photo-spread">
          {/* gradient circle */}
 
          <RadialGradient left="1" top="40" />
@@ -112,7 +111,7 @@ const PhotoSpread = () => {
                variants={photoVariants}
                initial={{ rotate: '12deg', opacity: 0, y: -100, scale: 1 }}
                whileHover="hover"
-               className="absolute left-[4%] top-[2%] z-image aspect-[3/2] w-[29%] rotate-[12deg] overflow-clip shadow-md"
+               className="absolute left-[4%] top-[2%] aspect-[3/2] w-[29%] rotate-[12deg] overflow-clip shadow-md"
             >
                <Image
                   src={'/jpg/portrait/portrait_01.jpg'}
@@ -129,7 +128,7 @@ const PhotoSpread = () => {
                variants={photoVariants}
                initial={{ rotate: '-2deg', opacity: 0, y: -100, scale: 1 }}
                whileHover="hover"
-               className="absolute left-[24%] top-[5%] z-image aspect-square w-[29%] rotate-[-2deg] shadow-md"
+               className="absolute left-[24%] top-[5%] aspect-square w-[29%] rotate-[-2deg] shadow-md"
             >
                <Image
                   src={'/jpg/portrait/portrait_05.jpg'}
@@ -146,7 +145,7 @@ const PhotoSpread = () => {
                variants={photoVariants}
                initial={{ rotate: '6deg', opacity: 0, y: -100, scale: 1 }}
                whileHover="hover"
-               className="absolute right-[6%] top-[9%] z-image aspect-[2/1] w-[29%] rotate-[6deg] shadow-md"
+               className="absolute right-[6%] top-[9%] aspect-[2/1] w-[29%] rotate-[6deg] shadow-md"
             >
                <Image
                   src={'/jpg/portrait/portrait_02.jpg'}
@@ -163,7 +162,7 @@ const PhotoSpread = () => {
                variants={photoVariants}
                initial={{ rotate: '12deg', opacity: 0, y: -100, scale: 1 }}
                whileHover="hover"
-               className="absolute left-[5%] top-[24%] z-image aspect-square w-[29%] rotate-[12deg] shadow-md"
+               className="absolute left-[5%] top-[24%] aspect-square w-[29%] rotate-[12deg] shadow-md"
             >
                <Image
                   src={'/jpg/nature/nature_01.jpg'}
@@ -180,7 +179,7 @@ const PhotoSpread = () => {
                variants={photoVariants}
                initial={{ rotate: '25deg', opacity: 0, y: -100, scale: 1 }}
                whileHover="hover"
-               className="absolute left-[43%] top-[23%] z-image aspect-square w-[29%] rotate-[25deg] shadow-md"
+               className="absolute left-[43%] top-[23%] aspect-square w-[29%] rotate-[25deg] shadow-md"
             >
                <Image
                   src={'/jpg/nature/nature_05.jpg'}
@@ -197,7 +196,7 @@ const PhotoSpread = () => {
                variants={photoVariants}
                initial={{ rotate: '-6deg', opacity: 0, y: -100, scale: 1 }}
                whileHover="hover"
-               className="absolute left-[15%] top-[42%] z-image aspect-square w-[35%] rotate-[-6deg] shadow-md"
+               className="absolute left-[15%] top-[42%] aspect-square w-[35%] rotate-[-6deg] shadow-md"
             >
                <Image
                   src={'/jpg/wedding/wedding_02.jpg'}
@@ -215,7 +214,7 @@ const PhotoSpread = () => {
                variants={photoVariants}
                initial={{ rotate: '9deg', opacity: 0, y: -100, scale: 1 }}
                whileHover="hover"
-               className="absolute left-[50%] top-[45%] z-image aspect-square w-[49%] rotate-[9deg] shadow-md"
+               className="absolute left-[50%] top-[45%] aspect-square w-[49%] rotate-[9deg] shadow-md"
             >
                <Image
                   src={'/jpg/wedding/wedding_01.jpg'}

@@ -110,7 +110,7 @@ const GalleriesSection = () => {
          <Image
             src="/svg/camera_watermark.svg"
             alt="background"
-            className="absolute z-decor"
+            className="absolute"
             layout="fill"
             objectFit="contain"
             objectPosition="center 15%"

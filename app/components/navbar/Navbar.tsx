@@ -1,11 +1,6 @@
 'use client'
 
-import {
-   AnimatePresence,
-   motion,
-   useMotionValueEvent,
-   useScroll,
-} from 'framer-motion'
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
 import { useState } from 'react'
 import NavLink from './NavLink'
 import { Button } from '@/components/ui/button'
@@ -52,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({ bgColor = 'my-light-blue' }) => {
       <motion.div
          layout
          id="NavbarSection"
-         className={`fixed top-0 z-nav w-full bg-${bgColor} px-[4vw] 1450:px-0`}
+         className={`fixed top-0 z-[100] w-full bg-${bgColor} px-[4vw] 1450:px-0`}
          initial={{ y: -88 }}
          animate={isNavVisible ? 'visible' : 'hidden'}
          transition={{ duration: 0.3, ease: 'easeInOut' }}

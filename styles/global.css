@@ -109,7 +109,7 @@
    }
 
    .btn {
-      @apply z-button w-auto rounded-full px-4 py-2 text-[14px] font-semibold shadow-xl transition-all duration-300 ease-in-out active:shadow-none active:ring-4 active:ring-my-medium-orange active:ring-offset-transparent min-[768px]:text-[16px];
+      @apply w-auto rounded-full px-4 py-2 text-[14px] font-semibold shadow-xl transition-all duration-300 ease-in-out active:shadow-none active:ring-4 active:ring-my-medium-orange active:ring-offset-transparent min-[768px]:text-[16px];
    }
 
    .no-scrollbar::-webkit-scrollbar {

@@ -83,17 +83,7 @@ module.exports = {
         sans: ['var(--font-sans)'],
         serif: ['var(--font-serif)'],
       },
-      zIndex: {
-        'footer': '-6',
-        'section': '-5',
-        'container': '0',
-        'decor': '-3',
-        'text': '3',
-        'image': '5',
-        'hover-image': '6',
-        'button': '10',
-        'nav': '20'
-      },
+
       screens: {
         '300': '300px',
         '350': '350px',

@@ -9,7 +9,7 @@ import RiseAndAppear from '../motions/RiseAndAppear'
 
 const ServicesSection = () => {
    return (
-      <Section name="ServicesSection" bgColor="my-medium-blue">
+      <Section name="ServicesSection" bgColor="my-medium-blue" zIndex={2}>
          <div className="pt-[8vw]">
             <div className="px-[4vw] 1450:px-0">
                <RiseAndAppear>
