@@ -1,5 +1,5 @@
 'use client'
-// TODO: Ensure slide buttons snap to set positions
+
 import { motion } from 'framer-motion'
 
 interface GallerySlideButtonProps {

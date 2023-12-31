@@ -49,12 +49,14 @@ const Gallery: React.FC<GalleryProps> = ({ images, heading }) => {
             viewport={{ once: true }}
             ref={scrollContainer}
             className="no-scrollbar flex gap-[24px] overflow-x-auto scroll-smooth"
+            style={{ scrollSnapType: 'x mandatory' }}
          >
             {images.map((image, index) => (
                <motion.div
                   variants={imageVariants}
                   key={index}
                   className="relative h-[300px] w-[300px] flex-shrink-0"
+                  style={{ scrollSnapAlign: 'start' }}
                >
                   <Image
                      src={image.url}
