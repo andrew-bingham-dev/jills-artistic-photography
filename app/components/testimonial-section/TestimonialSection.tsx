@@ -1,5 +1,7 @@
 'use client'
 
+// TODO: Fix Testimonial z-index issue
+// TODO: Fix star animation timing
 import BrowHeadingParagraph from '../brow-heading-paragraph/BrowHeadingParagraph'
 import Section from '../section/Section'
 import Testimonial from './Testimonial'
