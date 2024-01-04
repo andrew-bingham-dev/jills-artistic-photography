@@ -110,7 +110,7 @@ const PhotoSpread = () => {
                variants={photoVariants}
                initial={{ rotate: '12deg', opacity: 0, y: -100, scale: 1 }}
                whileHover="hover"
-               className="absolute left-[4%] top-[2%] aspect-[3/2] w-[29%] rotate-[12deg] overflow-clip shadow-md"
+               className="absolute left-[4%] top-[2%] aspect-[3/2] w-[29%] rotate-[12deg] overflow-clip shadow-md hover:shadow-2xl"
             >
                <Image
                   src={'/jpg/portrait/portrait_01.jpg'}
@@ -127,7 +127,7 @@ const PhotoSpread = () => {
                variants={photoVariants}
                initial={{ rotate: '-2deg', opacity: 0, y: -100, scale: 1 }}
                whileHover="hover"
-               className="absolute left-[24%] top-[5%] aspect-square w-[29%] rotate-[-2deg] shadow-md"
+               className="absolute left-[24%] top-[5%] aspect-square w-[29%] rotate-[-2deg] shadow-md hover:shadow-2xl"
             >
                <Image
                   src={'/jpg/portrait/portrait_05.jpg'}
@@ -144,7 +144,7 @@ const PhotoSpread = () => {
                variants={photoVariants}
                initial={{ rotate: '6deg', opacity: 0, y: -100, scale: 1 }}
                whileHover="hover"
-               className="absolute right-[6%] top-[9%] aspect-[2/1] w-[29%] rotate-[6deg] shadow-md"
+               className="absolute right-[6%] top-[9%] aspect-[2/1] w-[29%] rotate-[6deg] shadow-md hover:shadow-2xl"
             >
                <Image
                   src={'/jpg/portrait/portrait_02.jpg'}
@@ -161,7 +161,7 @@ const PhotoSpread = () => {
                variants={photoVariants}
                initial={{ rotate: '12deg', opacity: 0, y: -100, scale: 1 }}
                whileHover="hover"
-               className="absolute left-[5%] top-[24%] aspect-square w-[29%] rotate-[12deg] shadow-md"
+               className="absolute left-[5%] top-[24%] aspect-square w-[29%] rotate-[12deg] shadow-md hover:shadow-2xl"
             >
                <Image
                   src={'/jpg/nature/nature_01.jpg'}
@@ -178,7 +178,7 @@ const PhotoSpread = () => {
                variants={photoVariants}
                initial={{ rotate: '25deg', opacity: 0, y: -100, scale: 1 }}
                whileHover="hover"
-               className="absolute left-[43%] top-[23%] aspect-square w-[29%] rotate-[25deg] shadow-md"
+               className="absolute left-[43%] top-[23%] aspect-square w-[29%] rotate-[25deg] shadow-md hover:shadow-2xl"
             >
                <Image
                   src={'/jpg/nature/nature_05.jpg'}
@@ -195,7 +195,7 @@ const PhotoSpread = () => {
                variants={photoVariants}
                initial={{ rotate: '-6deg', opacity: 0, y: -100, scale: 1 }}
                whileHover="hover"
-               className="absolute left-[15%] top-[42%] aspect-square w-[35%] rotate-[-6deg] shadow-md"
+               className="absolute left-[15%] top-[42%] aspect-square w-[35%] rotate-[-6deg] shadow-md hover:shadow-2xl"
             >
                <Image
                   src={'/jpg/wedding/wedding_02.jpg'}
@@ -213,7 +213,7 @@ const PhotoSpread = () => {
                variants={photoVariants}
                initial={{ rotate: '9deg', opacity: 0, y: -100, scale: 1 }}
                whileHover="hover"
-               className="absolute left-[50%] top-[45%] aspect-square w-[49%] rotate-[9deg] shadow-md"
+               className="absolute left-[50%] top-[45%] aspect-square w-[49%] rotate-[9deg] shadow-md hover:shadow-2xl"
             >
                <Image
                   src={'/jpg/wedding/wedding_01.jpg'}
