@@ -1,6 +1,10 @@
+// TODO: Add schema for galleries
+// TODO: Add schema for testimonials
+// TODO: Add schema for content
+
 import { type SchemaTypeDefinition } from 'sanity'
-import pet from './schemas/pet'
+import blog from './schemas/blog'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [pet],
+  types: [blog],
 }
