@@ -27,8 +27,8 @@ const ServicesCard: React.FC<ServicesCardProps> = ({
    return (
       <motion.div
          initial={{ scale: 1 }}
-         whileHover={{ scale: 1.05 }}
-         className="relative z-[5] flex h-full flex-col overflow-clip bg-my-dark-blue shadow-lg shadow-my-dark-blue"
+         whileHover={{ scale: 1.03 }}
+         className="relative z-[5] flex h-full flex-col overflow-clip bg-my-dark-blue shadow-md shadow-my-dark-blue transition-shadow hover:shadow-2xl"
       >
          <Link href={url}>
             <div className="relative h-60 overflow-clip">
