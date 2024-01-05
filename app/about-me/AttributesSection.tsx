@@ -1,4 +1,4 @@
-import Section from '../section/Section'
+import Section from '../components/section/Section'
 import Attribute from './Attribute'
 
 const AttributesSection = () => {

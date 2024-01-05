@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import GallerySlideButton from './GallerySlideButton'
 import { useRef } from 'react'
-import RiseAndAppear from '../motions/RiseAndAppear'
+import RiseAndAppear from '../components/motions/RiseAndAppear'
 import { motion } from 'framer-motion'
 
 const imageVariants = {

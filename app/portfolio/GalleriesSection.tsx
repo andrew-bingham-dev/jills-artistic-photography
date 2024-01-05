@@ -1,9 +1,9 @@
 'use client'
 
-import Spacer from '../Spacer'
-import BrowHeadingParagraph from '../brow-heading-paragraph/BrowHeadingParagraph'
-import RiseAndAppear from '../motions/RiseAndAppear'
-import Section from '../section/Section'
+import Spacer from '../components/Spacer'
+import BrowHeadingParagraph from '../components/brow-heading-paragraph/BrowHeadingParagraph'
+import RiseAndAppear from '../components/motions/RiseAndAppear'
+import Section from '../components/section/Section'
 import Gallery from './Gallery'
 import Image from 'next/image'
 
