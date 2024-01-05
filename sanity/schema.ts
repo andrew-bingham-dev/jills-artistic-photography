@@ -4,7 +4,8 @@
 
 import { type SchemaTypeDefinition } from 'sanity'
 import blog from './schemas/blog'
+import categories from './schemas/categories'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [blog],
+  types: [blog, categories],
 }
