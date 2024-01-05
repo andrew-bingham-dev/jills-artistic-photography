@@ -1,10 +1,10 @@
-import AboutMeSection from '../components/about-me-section/AboutMeSection'
-import AttributesSection from '../components/about-me-section/AttributesSection'
+import AboutMeSection from './AboutMeSection'
+import AttributesSection from './AttributesSection'
 import CtaSection from '../components/cta-section/CtaSection'
 import Footer from '../components/footer-section/Footer'
 import Navbar from '../components/navbar/Navbar'
 
-export default function Home() {
+export default function AboutMe() {
    return (
       <>
          <main className="relative z-10">
