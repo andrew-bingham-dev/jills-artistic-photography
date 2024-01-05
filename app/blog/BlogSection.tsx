@@ -9,7 +9,7 @@ const BlogSection = () => {
          bgColor="my-light-blue"
          containerClasses="pt-[88px]"
       >
-         <div className="py-[8vw]">
+         <div className="px-[4vw] py-[8vw] 1450:px-0">
             <div className="flex flex-col gap-[4vw]">
                <BrowHeadingParagraph
                   color="my-dark-blue"

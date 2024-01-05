@@ -35,9 +35,31 @@ const blog = {
          }
       },
       {
+         name: 'categories',
+         type: 'array',
+         title: 'Categories',
+         of: [
+            {
+               type: 'reference',
+               to: {
+                  type: 'categories'
+               }
+            }
+         ]
+      },
+      {
          name: 'timeToRead',
          type: 'number',
          title: 'Time to read (mins)'
+      },
+      {
+         name: 'slug',
+         type: 'slug',
+         title: 'Slug',
+         options: {
+            source: 'title',
+            maxLength: 96
+         }
       },
       {
          name: 'body',

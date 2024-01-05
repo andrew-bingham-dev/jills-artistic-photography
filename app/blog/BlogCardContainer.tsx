@@ -1,25 +1,30 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+'use client'
+
 import Card from '../components/card/Card'
-import wedding01 from '../../public/jpg/wedding/wedding_01.jpg'
+import { urlForImage } from '@/sanity/lib/image'
+import { useGetBlogPosts } from './hooks'
+import { BlogPost } from './interfaces'
 
 const BlogCardContainer = () => {
+   const posts = useGetBlogPosts()
+
    return (
       <div>
-         <Card
-            brow="3 min read"
-            heading="10 Tips for Stunning Wedding Photos"
-            paragraph={[
-               'Learn how to capture beautiful moments on your special day',
-            ]}
-            altImageDescription="Bride and groom holding hands"
-            image={wedding01}
-            url="#"
-         />
+         {posts?.map((post: BlogPost, index) => (
+            <Card
+               key={index}
+               brow={post.timeToRead + ' min read'}
+               heading={post.title}
+               paragraph={[post.shortDescription]}
+               altImageDescription="Bride and groom holding hands"
+               image={urlForImage(post.mainImage)}
+               url={`/blog/${post.slug}`}
+               newTab
+            />
+         ))}
       </div>
    )
-}
-
-async function getData() {
-   const query = ``
 }
 
 export default BlogCardContainer

@@ -1,4 +1,5 @@
 'use client'
+// TODO: Add category tags to card
 
 import BrowHeadingParagraph from '../brow-heading-paragraph/BrowHeadingParagraph'
 import Image, { StaticImageData } from 'next/image'
@@ -9,10 +10,11 @@ interface ServicesCardProps {
    brow: string
    heading: string
    paragraph: string[]
-   image: StaticImageData
+   image: StaticImageData | string
    altImageDescription: string
    imagePosition?: string
    url: string
+   newTab?: boolean
 }
 
 const ServicesCard: React.FC<ServicesCardProps> = ({
@@ -23,6 +25,7 @@ const ServicesCard: React.FC<ServicesCardProps> = ({
    altImageDescription,
    imagePosition = 'center center',
    url,
+   newTab = false,
 }) => {
    return (
       <motion.div
@@ -30,7 +33,11 @@ const ServicesCard: React.FC<ServicesCardProps> = ({
          whileHover={{ scale: 1.03 }}
          className="relative z-[5] flex h-full flex-col overflow-clip bg-my-dark-blue shadow-md shadow-my-dark-blue transition-shadow hover:shadow-2xl"
       >
-         <Link href={url}>
+         <Link
+            href={url}
+            target={newTab ? '_blank' : '_self'}
+            rel={newTab ? 'noopener noreferrer' : undefined}
+         >
             <div className="relative h-60 overflow-clip">
                <Image
                   src={image}
