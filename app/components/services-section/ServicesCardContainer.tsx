@@ -1,6 +1,6 @@
 'use client'
 
-import ServicesCard from './ServicesCard'
+import ServicesCard from '../card/Card'
 import weddingImage04 from '../../../public/jpg/wedding/wedding_04.jpg'
 import portraitImage01 from '../../../public/jpg/portrait/portrait_01.jpg'
 import natureImage04 from '../../../public/jpg/nature/nature_04.jpg'
