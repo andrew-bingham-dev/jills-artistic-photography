@@ -11,6 +11,11 @@ const blog = {
          title: 'Title',
       },
       {
+         name: 'shortDescription',
+         type: 'string',
+         title: 'Short Description',
+      },
+      {
          name: 'publishedAt',
          type: 'datetime',
          title: 'Published At',
