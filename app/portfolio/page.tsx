@@ -1,9 +1,9 @@
 import CtaSection from '../components/cta-section/CtaSection'
 import Footer from '../components/footer-section/Footer'
-import GalleriesSection from '../components/galleries-section/GalleriesSection'
+import GalleriesSection from './GalleriesSection'
 import Navbar from '../components/navbar/Navbar'
 
-export default function Home() {
+export default function Portfolio() {
    return (
       <>
          <main className="relative z-10">
